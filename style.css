@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-header{
+    background: linear-gradient(rgba(25,58,47,0.5)),(rgba(25,58,47,0.5)),url(img/events-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-header img{
+    animation: imgRotate 5s linear infinite;
+}
+@keyframes imgRotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.btn{
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    transform: 0.5s;
+}
+
+.btn-primary,
+.btn-secondary{
+    color: antiquewhite;
+}
+
+.service-item{
+    box-shadow: 0 0 5px rgba(rgb(230, 224, 224), rgb(242, 242, 242), rgb(233, 233, 233),0.5);
+    transition: 0.5s;
+
+}
+.service-item:hover{
+    background: rgb(153, 201, 109);
+    color: azure;
+}
+h5{
+    font-weight: 900 bold;
+
+}
+.service-item *{
+    transition: 0.5s;
+}
+.service-item :hover *{
+    color: rgb(198, 186, 210) !important;
+}
